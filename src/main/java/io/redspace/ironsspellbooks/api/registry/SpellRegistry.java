@@ -13,6 +13,7 @@ import io.redspace.ironsspellbooks.spells.ice.*;
 import io.redspace.ironsspellbooks.spells.lightning.*;
 import io.redspace.ironsspellbooks.spells.nature.*;
 import io.redspace.ironsspellbooks.spells.eldritch.*;
+import io.redspace.ironsspellbooks.spells.weapon.SniperShotSpell;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -158,6 +159,7 @@ public class SpellRegistry {
     public static final RegistryObject<AbstractSpell> LIGHTNING_BOLT_SPELL = registerSpell(new LightningBoltSpell());
     public static final RegistryObject<AbstractSpell> LIGHTNING_LANCE_SPELL = registerSpell(new LightningLanceSpell());
     //public static final RegistryObject<AbstractSpell> THUNDER_STEP_SPELL = registerSpell(new ThunderStepSpell());
+    public static final RegistryObject<AbstractSpell> SHOCKWAVE_SPELL = registerSpell(new ShockwaveSpell());
 
     // NATURE
     public static final RegistryObject<AbstractSpell> ACID_ORB_SPELL = registerSpell(new AcidOrbSpell());
@@ -181,4 +183,7 @@ public class SpellRegistry {
     public static final RegistryObject<AbstractSpell> PLANAR_SIGHT_SPELL = registerSpell(new PlanarSightSpell());
     public static final RegistryObject<AbstractSpell> TELEKINESIS_SPELL = registerSpell(new TelekinesisSpell());
     public static final RegistryObject<AbstractSpell> ELDRITCH_BLAST_SPELL = registerSpell(new EldritchBlastSpell());
+
+    //BULLET
+    public static final RegistryObject<AbstractSpell> SNIPER_SHOT = registerSpell(new SniperShotSpell());
 }

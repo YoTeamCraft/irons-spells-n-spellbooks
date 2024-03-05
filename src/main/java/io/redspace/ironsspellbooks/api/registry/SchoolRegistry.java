@@ -52,6 +52,7 @@ public class SchoolRegistry {
     public static final ResourceLocation EVOCATION_RESOURCE = IronsSpellbooks.id("evocation");
     public static final ResourceLocation NATURE_RESOURCE = IronsSpellbooks.id("nature");
     public static final ResourceLocation ELDRITCH_RESOURCE = IronsSpellbooks.id("eldritch");
+    public static final ResourceLocation BULLET_RESOURCE = IronsSpellbooks.id("bullet");
 
     public static final RegistryObject<SchoolType> FIRE = registerSchool(new SchoolType(
             FIRE_RESOURCE,
@@ -140,6 +141,15 @@ public class SchoolRegistry {
             LazyOptional.empty(),
             LazyOptional.of(SoundRegistry.EVOCATION_CAST::get),
             ISSDamageTypes.ELDRITCH_MAGIC
+    ));
+
+    public static final RegistryObject<SchoolType> BULLET = registerSchool(new SchoolType(
+            BULLET_RESOURCE,
+            ModTags.BULLET_FOCUS,
+            Component.translatable("school.irons_spellbooks.bullet").withStyle(ChatFormatting.GRAY),
+            LazyOptional.empty(),
+            LazyOptional.empty(),
+            LazyOptional.of(SoundRegistry.BULLET_CAST::get)
     ));
 
     @Nullable

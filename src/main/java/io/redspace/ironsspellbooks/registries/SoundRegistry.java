@@ -90,12 +90,14 @@ public class SoundRegistry {
     public static RegistryObject<SoundEvent> PLANAR_SIGHT_CAST = registerSoundEvent("spell.planar_sight.cast");
     public static RegistryObject<SoundEvent> HEAT_SURGE_PREPARE = registerSoundEvent("spell.heat_surge.prepare");
     public static RegistryObject<SoundEvent> FROSTWAVE_PREPARE = registerSoundEvent("spell.frostwave.prepare");
-    public static RegistryObject<SoundEvent> ARROW_VOLLEY_PREPARE = registerSoundEvent("spell.arrow_volley.prepare");
+    public static RegistryObject<SoundEvent> ARROW_VOLLEY_PREPARE = registerSoundEvent("spell.arrow_volley.c");
     public static RegistryObject<SoundEvent> BOW_SHOOT = registerSoundEvent("bow_shoot");
     public static RegistryObject<SoundEvent> RECALL_PREPARE = registerSoundEvent("spell.recall.prepare");
     public static RegistryObject<SoundEvent> ELDRITCH_BLAST = registerSoundEvent("spell.eldritch_blast.cast");
     public static RegistryObject<SoundEvent> FLAMING_STRIKE_UPSWING = registerSoundEvent("spell.flaming_strike.begin");
     public static RegistryObject<SoundEvent> FLAMING_STRIKE_SWING = registerSoundEvent("spell.flaming_strike.cast");
+    public static RegistryObject<SoundEvent> SHOCKWAVE_CAST = registerSoundEvent("spell.shockwave.cast");
+    public static RegistryObject<SoundEvent> SHOCKWAVE_PREPARE = registerSoundEvent("spell.shockwave.prepare");
 
     public static RegistryObject<SoundEvent> DEAD_KING_SWING = registerSoundEvent("entity.dead_king.attack_swing");
     public static RegistryObject<SoundEvent> DEAD_KING_SLAM = registerSoundEvent("entity.dead_king.attack_slam");
@@ -118,6 +120,7 @@ public class SoundRegistry {
     public static RegistryObject<SoundEvent> EVOCATION_CAST = registerSoundEvent("cast.generic.evocation");
     public static RegistryObject<SoundEvent> NATURE_CAST = registerSoundEvent("cast.generic.nature");
     public static RegistryObject<SoundEvent> POISON_CAST = registerSoundEvent("cast.generic.poison");
+    public static RegistryObject<SoundEvent> BULLET_CAST = registerSoundEvent("cast.generic.bullet");
 
     public static RegistryObject<SoundEvent> LEARN_ELDRITCH_SPELL = registerSoundEvent("ui.learn_eldritch_spell");
     public static RegistryObject<SoundEvent> UI_TICK = registerSoundEvent("ui.tick");
